@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Crafty+Girls" rel="stylesheet">
+	<meta charset="utf-8">
+	<title> Media</title>
+	<style>
+		body{
+			background-color: green;
+			font-size: 20px;
+
+		}
+
+		.p3, .p2{
+			display: none;
+		}
+		.p1{
+			font-family: 'Crafty Girls', cursive;
+		}
+
+		@media screen and (min-width: 700px) and (max-width: 1199px){
+			body{
+				background: yellow;
+				font-family: 'Homemade Apple', cursive;
+			}
+			.p1, .p2{
+				display: none;
+			}
+			.p3{
+				display: block;
+			}
+		}
+		@media screen and (max-width: 700px){
+			body{
+				background: red;
+				font-family: 'Gochi Hand', cursive;
+			}
+			.p1, .p3{
+				display: none;
+			}
+			.p2{
+				display: block;
+			}
+		}
+		
+	</style>
+</head>
+<body>
+	<p class="p1">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur qui consequuntur iure cum sit, beatae dolorem, dolores facere vel, temporibus harum quas rem adipisci, minus error. Nobis dolores alias facere.
+	</p>
+
+	<p class="p2">
+		Muy lejos, más allá de las montañas de palabras, alejados de los países de las vocales y las consonantes, viven los textos simulados. Viven aislados en casas de letras, en la costa de la semántica, un gran océano de lenguas. Un riachuelo llamado Pons fluye por su pueblo y los abastece con las normas necesarias.
+	</p>
+
+	<p class="p3"> 
+		Hablamos de un país paraisomático en el que a uno le caen pedazos de frases asadas en la boca. Ni siquiera los todopoderosos signos de puntuación dominan a los textos simulados; una vida, se puede decir, poco ortográfica. Pero un buen día, una pequeña línea
+	</p>
+</body>
+</html>
